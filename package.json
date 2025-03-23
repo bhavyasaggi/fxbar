@@ -1,0 +1,29 @@
+{
+  "name": "fxbar",
+  "description": "Frontend eXperiements in Browser API & React",
+  "version": "0.0.0",
+  "private": true,
+  "repository": "https://github.com/bhavyasaggi/fxbar.git",
+  "author": "Bhavya Saggi <bhavya.saggi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "deduplicate": "yarn-deduplicate --strategy=fewer",
+    "lint-staged": "lint-staged",
+    "lint": "yarn workspaces run lint"
+  },
+  "workspaces": [
+    "apps/*",
+    "libs/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
+    "typescript": "^5.8.2",
+    "yarn-deduplicate": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

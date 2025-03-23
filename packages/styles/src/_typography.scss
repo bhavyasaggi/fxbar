@@ -1,0 +1,67 @@
+// Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.34rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.67rem;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+mark {
+  background-color: var(--color-border);
+  color: var(--color-text);
+}
+
+blockquote {
+  border-left: 0.3rem solid var(--color-primary);
+  margin: 0.34rem 0;
+  padding: 1rem 1.2rem;
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+code {
+  background: var(--color-border);
+  border-radius: var(--border-radius);
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap;
+}
+
+pre {
+  background: var(--color-border);
+  border-left: 0.3rem solid var(--color-primary);
+  overflow-y: hidden;
+
+  & > code {
+    border-radius: 0;
+    display: block;
+    padding: 1rem 1.2rem;
+    white-space: pre;
+  }
+}

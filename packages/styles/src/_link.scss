@@ -1,0 +1,16 @@
+// Link
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+
+  &:visited {
+    color: var(--color-primary);
+  }
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}

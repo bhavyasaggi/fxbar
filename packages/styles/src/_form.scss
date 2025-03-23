@@ -1,0 +1,91 @@
+// Form
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+input[type="color"],
+input[type="date"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+input[type="week"],
+input:not([type]),
+textarea,
+select {
+  appearance: none;
+  background-color: var(--color-bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: none;
+  box-sizing: inherit; // Forced to replace inherit values of the normalize.css
+  height: 3rem;
+  padding: 0.67rem 1.2rem 0.67rem; // This vertically centers text on FF, ignored by Webkit
+  width: 100%;
+  margin: 0.34rem 0;
+  color: var(--color-text);
+
+  &:placeholder {
+    color: var(--color-text);
+  }
+
+  &:focus,
+  &:target,
+  &:active {
+    outline: 0;
+    border-color: var(--color-primary);
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  appearance: none;
+  background-color: var(--color-bg);
+  border: 0.1rem solid var(--color-text);
+  height: 1.2rem;
+  width: 1.2rem;
+  box-shadow: none;
+  margin: 0 0.2rem 0 0;
+  vertical-align: top;
+
+  &:focus,
+  &:target,
+  &:active {
+    outline: 0;
+    border-color: var(--color-primary);
+  }
+
+  &:focus,
+  &:target {
+    box-shadow: var(--box-shadow);
+  }
+
+  &:checked {
+    border: 0.34rem solid var(--color-primary);
+  }
+}
+input[type="checkbox"] {
+  border-radius: var(--border-radius);
+}
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+label,
+legend {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.2rem;
+}
+
+fieldset {
+  margin-bottom: 0.2rem;
+  border: 0;
+  padding: 0;
+}

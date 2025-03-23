@@ -1,0 +1,40 @@
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  appearance: none;
+  background-color: var(--color-primary);
+  border: 0.1rem solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-bg);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: var(--font-weight-bold);
+  min-height: 3rem;
+  padding: 0.67rem 1.2rem 0.67rem; // This vertically centers text on FF, ignored by Webkit
+
+  &:focus,
+  &:hover {
+    background-color: var(--color-text);
+    border-color: var(--color-text);
+    color: var(--color-bg);
+    outline: 0;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-bg);
+
+    &:focus,
+    &:hover {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: var(--color-bg);
+    }
+  }
+}

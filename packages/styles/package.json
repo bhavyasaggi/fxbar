@@ -1,0 +1,67 @@
+{
+  "name": "@fxbar/styles",
+  "version": "0.0.0",
+  "description": "A drop-in classless stylesheet for consistent and clean design.",
+  "main": "dist/index.css",
+  "module": "dist/index.css",
+  "exports": {
+    ".": {
+      "import": "./dist/index.css",
+      "require": "./dist/index.css"
+    },
+    "./index.min.css": "./dist/index.min.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhavyasaggi/fxbar.git"
+  },
+  "keywords": [
+    "css",
+    "stylesheet",
+    "classless",
+    "modern",
+    "normalize"
+  ],
+  "scripts": {
+    "dev": "serve -s -p 8080",
+    "lint": "yarn lint:prettier && yarn lint:scss",
+    "lint:prettier": "prettier --log-level=warn --write .",
+    "lint:scss": "sass-lint -v -q 'src/**/*.scss'",
+    "clean": "rimraf dist",
+    "build": "yarn build:scss && yarn build:mincss && yarn build:postcss",
+    "build:scss": "sass src/index.scss dist/index.css",
+    "build:mincss": "sass src/index.scss dist/index.min.css --style=compressed --no-source-map --no-unicode --quiet",
+    "build:postcss": "postcss dist/index.min.css --replace --no-map --config postcss.config.js",
+    "prepublishOnly": "yarn clean && yarn build",
+    "publish": "npm publish --access public"
+  },
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "cssnano-preset-advanced": "^7.0.6",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-fail-on-warn": "^0.2.1",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "sass": "^1.86.0",
+    "sass-lint": "^1.13.1",
+    "serve": "^14.2.4"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

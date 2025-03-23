@@ -1,0 +1,38 @@
+// Table
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+table {
+  border-spacing: 0;
+  display: block;
+  overflow-x: auto;
+  text-align: left;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: var(--border);
+  padding: 1rem 1.2rem;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+thead,
+tbody {
+}
+
+caption {
+}
+
+@media (min-width: 40rem) {
+  table {
+    display: table;
+    overflow-x: initial;
+  }
+}

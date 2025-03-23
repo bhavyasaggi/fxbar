@@ -1,0 +1,116 @@
+#########################
+## SASS Lint Configuration
+## For detailed rules, visit: https://github.com/sasstools/sass-lint/tree/master/docs/rules
+#########################
+
+# Linter Options
+options:
+  # Disable merging of default rules
+  merge-default-rules: false
+
+# File Options
+files:
+  include: 'src/**/*.s+(a|c)ss'
+  ignore:
+    - 'node_modules'
+    - 'dist'
+    - '*.min.css'
+
+# Rule Configuration
+rules:
+  # Formatting
+  attribute-quotes:
+    - 2
+    - include: true
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 2
+  mixins-before-declarations:
+    - 2
+    - exclude:
+        - breakpoint
+        - mq
+  nesting-depth:
+    - 1
+    - max-depth: 2
+
+  # Best Practices
+  no-warn: 1
+  no-debug: 1
+  no-ids: 2
+  no-duplicate-properties: 2
+  no-trailing-whitespace: 2
+  no-mergeable-selectors: 2
+  no-misspelled-properties: 2
+  no-transition-all: 1
+  no-universal-selectors: 2
+  no-url-domains: 2
+  no-url-protocols: 2
+
+  # Style
+  leading-zero:
+    - 2
+    - include: false
+  no-vendor-prefixes:
+    - 2
+    - ignore-non-standard: true
+  no-important: 2
+  hex-notation:
+    - 2
+    - style: lowercase
+  indentation:
+    - 2
+    - size: 2
+  property-sort-order:
+    - 2
+    - order: 'alphabetical'
+      ignore-custom-properties: true
+  property-units:
+    - 1
+    - global:
+        - 'em'
+        - 'rem'
+        - '%'
+        - 'px'
+        - 'vh'
+        - 'vw'
+  quotes: 2
+  space-after-colon: 2
+  space-after-comma: 2
+  space-around-operator: 2
+  space-before-brace: 2
+  space-before-colon: 0
+  space-between-parens: 2
+  single-line-per-selector: 2
+
+  # Variables and Functions
+  variable-for-property:
+    - 2
+    - properties:
+        - 'color'
+        - 'background-color'
+        - 'border-color'
+        - 'box-shadow'
+  function-name-format:
+    - 2
+    - allow-leading-underscore: false
+    - convention: hyphenatedlowercase
+  variable-name-format:
+    - 2
+    - allow-leading-underscore: true
+    - convention: hyphenatedlowercase
+  zero-unit: 2
+
+  # Final Output
+  final-newline:
+    - 2
+    - include: true
+  empty-line-between-blocks:
+    - 2
+    - include: true
+    - allow-single-line-rulesets: false
+  no-empty-rulesets: 2
+  clean-import-paths:
+    - 2
+    - leading-underscore: false
+    - filename-extension: false

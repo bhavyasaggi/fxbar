@@ -1,0 +1,38 @@
+// Base
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  scroll-behavior: smooth;
+}
+
+main,
+section,
+article {
+  margin: 0 auto;
+  max-width: 1460px;
+}
+
+header,
+footer,
+aside {
+}
+
+nav {
+}
+
+hr {
+  border: 0;
+  border-top: var(--border);
+  margin: 3rem 0;
+  clear: both;
+}
