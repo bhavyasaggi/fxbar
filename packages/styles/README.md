@@ -38,7 +38,7 @@ The following tags are available for optional extension:
 - **Dialog Elements**:
   - `<dialog>`
 - **Embedded Content**:
-  - `<iframe>`, `<figure>`, `<figcaption>`, `<video>`, `<audio>`, `<picture>`, `<object>`, `<source>`, `<track>`
+  - `<iframe>`, `<figure>`, `<figcaption>`, `<video>`, `<audio>`, `<picture>`, `<object>`, `<source>`, `<track>`, `<canvas>`
 - **Forms**:
   - `<input type="range">`, `<input type="file">`
 - **Indicators**:
@@ -49,7 +49,7 @@ The following tags are available for optional extension:
 To use this stylesheet in your project, include the following link in the `<head>` section of your HTML:
 
 ```html
-<link rel="stylesheet" href="@fxbar/styles/dist/index.min.css">
+<link rel="stylesheet" href="@fxbar/styles/dist/index.min.css" />
 ```
 
 ## Contribution

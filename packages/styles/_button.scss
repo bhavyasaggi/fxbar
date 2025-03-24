@@ -1,0 +1,42 @@
+@use './variables' as *;
+
+// Button
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+  appearance: none;
+  background-color: var(--c-pr);
+  border: 0.1rem solid var(--c-pr);
+  border-radius: $border-radius;
+  color: var(--c-bg);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $font-weight-bold;
+  min-height: 3rem;
+  padding: 0.67rem 1.2rem; // This vertically centers text on FF, ignored by Webkit
+
+  &:focus,
+  &:hover {
+    background-color: var(--c-tx);
+    border-color: var(--c-tx);
+    color: var(--c-bg);
+    outline: 0;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    background-color: var(--c-pr);
+    border-color: var(--c-pr);
+    color: var(--c-bg);
+
+    &:focus,
+    &:hover {
+      background-color: var(--c-pr);
+      border-color: var(--c-pr);
+      color: var(--c-bg);
+    }
+  }
+}

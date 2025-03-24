@@ -7,10 +7,11 @@
   "author": "Bhavya Saggi <bhavya.saggi@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "yarn workspaces run build",
+    "prepare": "husky",
     "deduplicate": "yarn-deduplicate --strategy=fewer",
     "lint-staged": "lint-staged",
-    "lint": "yarn workspaces run lint"
+    "lint": "yarn workspaces run lint",
+    "build": "yarn workspaces run build"
   },
   "workspaces": [
     "apps/*",

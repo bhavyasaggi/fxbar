@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 // Table
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
@@ -11,7 +13,7 @@ table {
 
 td,
 th {
-  border-bottom: var(--border);
+  border-bottom: var(--b);
   padding: 1rem 1.2rem;
 
   &:first-child {
@@ -23,14 +25,7 @@ th {
   }
 }
 
-thead,
-tbody {
-}
-
-caption {
-}
-
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   table {
     display: table;
     overflow-x: initial;

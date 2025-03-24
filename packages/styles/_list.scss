@@ -1,19 +1,7 @@
+@use './variables' as *;
+
 // List
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-
-dl,
-ol,
-ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-
-  dl,
-  ol,
-  ul {
-    margin-left: 3rem;
-  }
-}
 
 ol {
   list-style: decimal inside;
@@ -23,8 +11,29 @@ ul {
   list-style: circle inside;
 }
 
+dl {
+  list-style: none;
+}
+
+dl,
+ol,
+ul {
+  margin: 0;
+  padding-left: 0;
+
+  dl,
+  ol,
+  ul {
+    margin-left: 1.5rem;
+  }
+}
+
 dd,
 dt,
 li {
   margin: 0;
+}
+
+dt + dd {
+  margin-left: 1.5rem;
 }

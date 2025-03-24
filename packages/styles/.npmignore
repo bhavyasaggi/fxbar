@@ -3,4 +3,5 @@
 
 # Include specific files and folders
 !dist/
+!LICENSE
 !README.md

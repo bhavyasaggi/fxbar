@@ -1,17 +1,19 @@
+@use './variables' as *;
+
 // Base
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 html {
-  font-size: var(--font-size);
-  font-family: var(--font-family);
-  font-weight: var(--font-weight);
-  line-height: var(--line-height);
+  font-size: $font-size;
+  font-family: var(--ff);
+  font-weight: $font-weight;
+  line-height: $line-height;
 }
 
 body {
   margin: 0;
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  color: var(--c-tx);
+  background-color: var(--c-bg);
   scroll-behavior: smooth;
 }
 
@@ -22,17 +24,9 @@ article {
   max-width: 1460px;
 }
 
-header,
-footer,
-aside {
-}
-
-nav {
-}
-
 hr {
   border: 0;
-  border-top: var(--border);
-  margin: 3rem 0;
+  border-top: var(--b);
+  margin: 1.2rem 0;
   clear: both;
 }

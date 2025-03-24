@@ -1,12 +1,14 @@
+@use './variables' as *;
+
 // Link
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 a {
-  color: var(--color-primary);
+  color: var(--c-pr);
   text-decoration: none;
 
   &:visited {
-    color: var(--color-primary);
+    color: var(--c-pr);
   }
 
   &:focus,

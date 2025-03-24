@@ -1,0 +1,11 @@
+@use './variables' as *;
+
+// Embed
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+iframe,
+audio,
+video,
+img {
+  max-width: 100%;
+}

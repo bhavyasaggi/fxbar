@@ -1,0 +1,60 @@
+@use './variables' as *;
+
+// Typography
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.34rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0.67rem;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+mark {
+  background-color: var(--c-bd);
+  color: var(--c-tx);
+}
+
+blockquote,
+pre {
+  border-left: var(--bq);
+  margin: 0.34rem 0;
+  padding: 0.67rem 1.2rem;
+}
+
+code,
+pre {
+  background: var(--c-bd);
+}
+
+pre {
+  max-width: 100%;
+  white-space: pre;
+  overflow: auto;
+
+  & > code {
+    display: inline;
+  }
+}

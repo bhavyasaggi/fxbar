@@ -1,0 +1,31 @@
+@use './variables' as *;
+
+// Attributes
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+[hidden] {
+  display: none;
+}
+
+:disabled,
+:disabled:hover,
+:disabled:focus,
+:disabled:target,
+:disabled:active,
+[disabled],
+[disabled]:hover,
+[disabled]:focus,
+[disabled]:target,
+[disabled]:active {
+  cursor: not-allowed;
+}
+
+::selection {
+  color: var(--c-bg);
+  background-color: var(--c-tx);
+}
+
+:focus,
+:focus-visible {
+  outline: var(--c-pr) auto 0.1rem;
+}

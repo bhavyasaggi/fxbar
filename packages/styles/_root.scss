@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+// Root
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+
+  --c-pr: light-dark(#{$color-primary}, #{$color-primary-dark});
+  --c-tx: light-dark(#{$color-secondary}, #{$color-secondary-dark});
+  --c-bg: light-dark(#{$color-initial}, #{$color-initial-dark});
+  --c-bd: light-dark(#{$color-tertiary}, #{$color-tertiary-dark});
+  --b: 0.1rem solid var(--c-bd);
+  --bq: 0.3rem solid var(--c-pr);
+  --bs: 0 0 0.2rem 0.1rem var(--c-pr);
+  --ff:
+    roboto, 'Noto Sans', arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
