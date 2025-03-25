@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "DavidAnson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "foxundermoon.shell-format",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml",
+    "dotenv.dotenv-vscode"
+  ]
+}

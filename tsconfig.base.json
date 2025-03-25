@@ -34,7 +34,7 @@
     "baseUrl": ".",
     "paths": {
       "@fxbar/*": [
-        "packages/src/*"
+        "packages/*"
       ],
       "@lib/*": [
         "libs/*"
@@ -48,9 +48,6 @@
     "dist",
     "build",
     "storybook-static",
-    "apps/**/node_modules",
-    "libs/**/node_modules",
-    "packages/**/node_modules",
-    "apps/**/.next"
+    ".next"
   ]
 }
