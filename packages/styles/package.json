@@ -30,8 +30,8 @@
     "lint:scss": "stylelint --validate --fix --quiet \"**/*.scss\"",
     "clean": "rimraf dist",
     "build": "yarn build:mincss && yarn build:postcss",
-    "build:scss": "sass index.scss dist/index.css",
-    "build:mincss": "sass index.scss dist/index.min.css --style=compressed --no-source-map --no-unicode --quiet",
+    "build:scss": "sass src/index.scss dist/index.css",
+    "build:mincss": "sass src/index.scss dist/index.min.css --style=compressed --no-source-map --no-unicode --quiet",
     "build:postcss": "postcss dist/index.min.css --replace --no-map --config postcss.config.js",
     "prepublishOnly": "yarn install --frozen-lockfile && yarn clean && yarn lint && yarn build",
     "publish": "npm publish --access public"
@@ -47,9 +47,9 @@
     "postcss-scss": "^4.0.9",
     "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
-    "sass": "^1.86.0",
+    "sass": "^1.86.2",
     "serve": "^14.2.4",
-    "stylelint": "^16.16.0",
+    "stylelint": "^16.17.0",
     "stylelint-config-standard": "^37.0.0",
     "stylelint-config-standard-scss": "^14.0.0"
   },

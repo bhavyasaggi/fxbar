@@ -5,14 +5,23 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "dotenv.enableAutocloaking": true,
+  "dotenv.enableAutocloaking": false,
   "editor.autoIndent": "full",
+  "editor.codeActionsOnSave": {
+    // "source.organizeImports": "always",
+    // "source.sortImports": "always",
+    "source.fixAll": "always"
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.detectIndentation": false,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.indentSize": "tabSize",
   "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "eslint.useFlatConfig": true,
   "eslint.workingDirectories": [
     "apps/app-espy",
     "apps/app-espy-client",
@@ -27,5 +36,13 @@
     "packages/styles",
     "packages/utils"
   ],
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "dotenv.enableSecretpeeking": false,
+  "cssVariables.lookupFiles": [
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+    "node_modules/@mantine/core/styles.css"
+  ]
 }

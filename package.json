@@ -7,8 +7,12 @@
   "author": "Bhavya Saggi <bhavya.saggi@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prepare": "husky",
-    "deduplicate": "yarn-deduplicate --strategy=fewer",
+    "prepare": "yarn prepare:husky && yarn prepare:sherif && yarn prepare:deduplicate",
+    "prepare:husky": "husky",
+    "prepare:sherif": "sherif --fix",
+    "prepare:deduplicate": "yarn-deduplicate --strategy=fewer",
+    "prettier": "prettier --write .",
+    "ws": "yarn workspace",
     "lint-staged": "lint-staged",
     "clean": "yarn workspaces run clean",
     "lint": "yarn workspaces run lint",
@@ -16,24 +20,19 @@
     "build": "yarn workspaces run build"
   },
   "workspaces": [
-    "apps/*",
+    "packages/*",
     "libs/*",
-    "packages/*"
+    "apps/*"
   ],
   "devDependencies": {
-    "@types/node": "^22.13.13",
-    "@eslint/js": "^9.23.0",
-    "eslint": "^9.23.0",
-    "eslint-plugin-react": "^7.37.4",
-    "globals": "^16.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
     "prettier": "^3.5.3",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.28.0",
+    "sherif": "^1.4.0",
     "yarn-deduplicate": "^6.0.2"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22"
 }

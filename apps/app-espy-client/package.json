@@ -1,5 +1,11 @@
 {
   "name": "app-espy-client",
   "version": "0.0.0",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "clean": "echo 'clean'",
+    "lint": "echo 'lint'",
+    "test": "echo 'test'",
+    "build": "echo 'build'"
+  }
 }

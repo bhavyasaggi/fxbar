@@ -1,29 +1,30 @@
 import { defineConfig } from 'tsup'
 
 export default defineConfig((options) => ({
-  name: '@fxbar/utils',
+  clean: true,
+  dts: true,
   entry: [
-    '**/*.(j|t)s',
+    'src/**/*.(j|t)s',
     '!*.(config|test).(j|t)s',
     '!node_modules/*',
     '!dist/*',
   ],
+  esbuildOptions(buildOptions) {
+    buildOptions.target = 'es2020'
+    return buildOptions
+  },
   format: ['cjs', 'esm', 'iife'],
-  silent: true,
-  dts: true,
-  splitting: false,
-  sourcemap: false,
-  clean: true,
+  globalName: 'fxbar_utils',
+  keepNames: true,
   minify: !options.watch,
-  minifyWhitespace: true,
   minifyIdentifiers: true,
   minifySyntax: true,
-  keepNames: true,
-  treeshake: true,
-  globalName: 'fxbar_utils',
+  minifyWhitespace: true,
+  name: '@fxbar/utils',
+
   outDir: 'dist',
-  esbuildOptions(options) {
-    options.target = 'es2020'
-    return options
-  },
+  silent: true,
+  sourcemap: false,
+  splitting: false,
+  treeshake: true,
 }))

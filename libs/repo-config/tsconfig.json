@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig-base.json",
+  "root": true,
+  "include": ["**/*.ts", "**/*.d.ts", "**/*.mjs", "**/*.js", "**/*.json"],
+  "exclude": ["node_modules", "dist"]
+}

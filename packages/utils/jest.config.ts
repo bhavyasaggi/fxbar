@@ -6,18 +6,18 @@
 import type { Config } from 'jest'
 
 const config: Config = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  roots: ['<rootDir>'],
-  testMatch: ['**/*.test.ts'],
-  moduleFileExtensions: ['ts', 'js', 'json', 'node'],
   clearMocks: true,
-  resetMocks: false,
-  restoreMocks: false,
-  resetModules: false,
   collectCoverage: false,
-  verbose: true,
   maxWorkers: 1,
+  moduleFileExtensions: ['ts', 'js', 'json', 'node'],
+  preset: 'ts-jest',
+  resetMocks: false,
+  resetModules: false,
+  restoreMocks: false,
+  roots: ['<rootDir>'],
+  testEnvironment: 'node',
+  testMatch: ['src/**/*.test.ts'],
+  verbose: true,
 }
 
 export default config

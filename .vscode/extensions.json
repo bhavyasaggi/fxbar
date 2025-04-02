@@ -6,6 +6,8 @@
     "foxundermoon.shell-format",
     "redhat.vscode-xml",
     "redhat.vscode-yaml",
-    "dotenv.dotenv-vscode"
+    "dotenv.dotenv-vscode",
+    "vunguyentuan.vscode-css-variables",
+    "vunguyentuan.vscode-postcss"
   ]
 }

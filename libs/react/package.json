@@ -1,0 +1,15 @@
+{
+  "name": "@lib/react",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "clean": "echo 'clean'",
+    "lint": "echo 'lint'",
+    "test": "echo 'test'",
+    "build": "echo 'build'"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

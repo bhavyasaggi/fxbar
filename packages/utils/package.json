@@ -44,29 +44,23 @@
   "scripts": {
     "dev": "tsup --watch",
     "clean": "rimraf dist",
-    "lint:eslint": "eslint . --fix --ext .js,.ts",
-    "lint:prettier": "prettier --write \"**/*.{ts,js,json,md}\"",
-    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint": "eslint . --fix --ext .js,.ts",
     "test": "jest --passWithNoTests",
     "build": "tsup",
     "prepublishOnly": "yarn install --frozen-lockfile && yarn clean && yarn lint && yarn test && yarn build",
     "publish": "npm publish --access public"
   },
   "devDependencies": {
-    "@eslint/js": "^9.23.0",
+    "@lib/repo-config": "*",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.13.13",
+    "@types/node": "^22.14.0",
     "eslint": "^9.23.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-prettier": "^5.2.5",
     "jest": "^29.7.0",
-    "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
-    "ts-jest": "^29.3.0",
+    "ts-jest": "^29.3.1",
     "ts-node": "^10.9.2",
     "tsup": "^8.4.0",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.28.0"
+    "typescript": "^5.8.2"
   },
   "engines": {
     "node": ">=18.0.0"
