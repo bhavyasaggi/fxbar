@@ -47,10 +47,10 @@
     "postcss-scss": "^4.0.9",
     "prettier": "^3.5.3",
     "rimraf": "^6.0.1",
-    "sass": "^1.86.2",
+    "sass": "^1.86.3",
     "serve": "^14.2.4",
-    "stylelint": "^16.17.0",
-    "stylelint-config-standard": "^37.0.0",
+    "stylelint": "^16.18.0",
+    "stylelint-config-standard": "^38.0.0",
     "stylelint-config-standard-scss": "^14.0.0"
   },
   "dependencies": {

@@ -1,15 +1,30 @@
 {
   "name": "@lib/react",
+  "description": "Internal React components and hooks",
   "version": "0.0.0",
   "license": "MIT",
+  "private": true,
+  "sideEffects": false,
   "scripts": {
     "clean": "echo 'clean'",
-    "lint": "echo 'lint'",
+    "lint": "eslint . --fix --ext .jsx,.js,.tsx,.ts",
     "test": "echo 'test'",
     "build": "echo 'build'"
   },
-  "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+  "dependencies": {
+    "@fxbar/styles": "*",
+    "@fxbar/utils": "*",
+    "@lib/repo-config": "*",
+    "clsx": "^2.1.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "eslint": "^9.24.0",
+    "sass": "^1.86.3",
+    "typescript": "^5.8.3"
   }
 }

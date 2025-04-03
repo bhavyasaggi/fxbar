@@ -1,37 +1,38 @@
 {
   "name": "@lib/repo-config",
+  "description": "Internal ESLint and TypeScript configurations",
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
   "private": true,
+  "sideEffects": false,
   "exports": {
-    "./eslint-base": "./eslint-base.js",
-    "./eslint-nextjs": "./eslint-nextjs.js",
-    "./eslint-react": "./eslint-react.js",
-    "./tsconfig-base.json": "./tsconfig-base.json",
-    "./tsconfig-nextjs.json": "./tsconfig-nextjs.json",
-    "./tsconfig-react.json": "./tsconfig-react.json"
+    "./*": "./*",
+    "./eslint-base": "./eslint-base.mjs",
+    "./eslint-react": "./eslint-react.mjs",
+    "./eslint-nextjs": "./eslint-nextjs.mjs"
   },
   "scripts": {
-    "clean": "echo 'clean'",
-    "lint": "eslint . --fix --ext .js,.ts",
-    "test": "echo 'test'",
-    "build": "echo 'build'"
+    "clean": "echo 'Nothing to clean.'",
+    "lint": "eslint . --fix --ext .js,.mjs,.ts",
+    "test": "echo 'No test configured.'",
+    "build": "echo 'Nothing to build (Import as-is & transpile).'"
   },
   "devDependencies": {
-    "@eslint/js": "^9.23.0",
+    "@eslint/js": "^9.24.0",
     "@next/eslint-plugin-next": "15.2.4",
     "@typescript-eslint/eslint-plugin": "^8.29.0",
     "@typescript-eslint/parser": "^8.29.0",
-    "eslint": "^9.23.0",
+    "eslint": "^9.24.0",
     "eslint-import-resolver-node": "^0.3.9",
-    "eslint-import-resolver-typescript": "^4.3.1",
+    "eslint-import-resolver-typescript": "^4.3.2",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-unicorn": "^58.0.0",
     "globals": "^16.0.0",
-    "typescript": "^5.8.2",
+    "typescript": "^5.8.3",
     "typescript-eslint": "^8.29.0"
   }
 }

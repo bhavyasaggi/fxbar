@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@lib/repo-config/tsconfig-react.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    ".lintstagedrc",
+    "**/*.ts",
+    "**/*.tsx",
+    "**.*.mjs",
+    "**/*.js",
+    "**/*.jsx"
+  ],
+  "exclude": ["node_modules", "out", "dist", "build", "coverage"]
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@lib/repo-config/tsconfig-nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@lib/*": ["../../libs/*"],
+      "@fxbar/browser-mbox": ["../../packages/browser-mbox/src"],
+      "@fxbar/utils/*": ["../../packages/utils/src/*"]
+    },
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    ".lintstagedrc.js",
+    "**/*.ts",
+    "**/*.tsx",
+    "**.*.mjs",
+    "**/*.js",
+    "**/*.jsx"
+  ],
+  "exclude": ["node_modules", "out", "dist", "build", "coverage"]
+}

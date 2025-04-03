@@ -22,20 +22,6 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "eslint.useFlatConfig": true,
-  "eslint.workingDirectories": [
-    "apps/app-espy",
-    "apps/app-espy-client",
-    "apps/app-tools",
-    "libs/next-modules",
-    "libs/react-components",
-    "libs/react-hooks",
-    "packages/assets",
-    "packages/icons",
-    "packages/images",
-    "packages/json",
-    "packages/styles",
-    "packages/utils"
-  ],
   "redhat.telemetry.enabled": false,
   "dotenv.enableSecretpeeking": false,
   "cssVariables.lookupFiles": [
@@ -43,6 +29,11 @@
     "**/*.scss",
     "**/*.sass",
     "**/*.less",
-    "node_modules/@mantine/core/styles.css"
+    "node_modules/@mantine/core/styles.css",
+    "node_modules/@mantine/core/styles.css",
+    "node_modules/@mantine/nprogress/styles.css",
+    "node_modules/@mantine/notifications/styles.css",
+    "node_modules/@mantine/dates/styles.css",
+    "node_modules/@mantine/dropzone/styles.css"
   ]
 }

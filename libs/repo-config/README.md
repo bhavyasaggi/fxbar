@@ -52,7 +52,6 @@ Ensure to replace `{...}` with approriate config.
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@lib/repo-config/*": ["../../libs/repo-config/*"],
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**.*.mjs", "**/*.js", "**/*.jsx"],

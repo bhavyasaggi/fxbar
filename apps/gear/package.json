@@ -1,0 +1,63 @@
+{
+  "name": "@app/gear",
+  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --fix",
+    "clean": "rimraf .next out dist build coverage"
+  },
+  "dependencies": {
+    "@codesandbox/sandpack-react": "^2.20.0",
+    "@fxbar/browser-mbox": "*",
+    "@fxbar/styles": "*",
+    "@fxbar/utils": "*",
+    "@jsquash/avif": "^2.0.0",
+    "@jsquash/jpeg": "^1.5.0",
+    "@jsquash/jxl": "^1.1.0",
+    "@jsquash/png": "^3.0.1",
+    "@jsquash/webp": "^1.4.0",
+    "@lib/repo-config": "*",
+    "@mantine/colors-generator": "^7.17.3",
+    "@mantine/core": "^7.17.3",
+    "@mantine/dates": "^7.17.3",
+    "@mantine/dropzone": "^7.17.3",
+    "@mantine/form": "^7.17.3",
+    "@mantine/hooks": "^7.17.3",
+    "@mantine/notifications": "^7.17.3",
+    "@mantine/nprogress": "^7.17.3",
+    "chroma-js": "^3.1.2",
+    "clsx": "^2.1.1",
+    "cron-parser": "^5.1.1",
+    "cronstrue": "^2.58.0",
+    "dayjs": "^1.11.13",
+    "feather-icons": "^4.29.2",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "next": "15.2.4",
+    "pretty-bytes": "^6.1.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-filerobot-image-editor": "^4.9.1",
+    "react-konva": "^19.0.3",
+    "styled-components": "^6.1.17",
+    "terser": "^5.39.0"
+  },
+  "devDependencies": {
+    "@types/feather-icons": "^4.29.4",
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "eslint": "^9.24.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.86.3",
+    "typescript": "^5.8.3"
+  }
+}

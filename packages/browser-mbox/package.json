@@ -1,7 +1,7 @@
 {
-  "name": "@fxbar/utils",
-  "version": "0.0.1",
-  "description": "Utility functions for fxbar packages",
+  "name": "@fxbar/browser-mbox",
+  "version": "0.0.0",
+  "description": "Mbox parser for client",
   "private": false,
   "license": "MIT",
   "repository": {
@@ -49,6 +49,11 @@
     "build": "tsup",
     "prepublishOnly": "yarn install --frozen-lockfile && yarn clean && yarn lint && yarn test && yarn build",
     "publish": "npm publish --access public"
+  },
+  "dependencies": {
+    "browser-fs-access": "^0.35.0",
+    "idb": "^8.0.2",
+    "postal-mime": "^2.4.3"
   },
   "devDependencies": {
     "@lib/repo-config": "*",
